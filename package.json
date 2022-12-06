@@ -9,7 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/react": "^18.0.26",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "million": "^1.12.6-beta.2",
+    "react": "^18.2.0"
   }
 }
