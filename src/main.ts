@@ -1,4 +1,12 @@
 import "./style.css";
-import "./million-dom";
-import "./real-dom";
-import "./react-dom";
+import { createElement, render } from "./vdom";
+
+// console.log(createElement("div"));
+
+const Box = createElement("div", {}, createElement("p", { class: "hello" }, "HI!"));
+
+const root = document.getElementById("app")!;
+
+const app = render(Box);
+
+root.appendChild(app);
