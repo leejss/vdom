@@ -64,3 +64,9 @@ export const render = (node: VNode) => {
   if (typeof node === "string") return renderTextNode(node);
   return renderElementNode(node);
 };
+
+// mount
+export const mount = (node: HTMLElement, target: HTMLElement) => {
+  target.replaceWith(node);
+  return node;
+};
